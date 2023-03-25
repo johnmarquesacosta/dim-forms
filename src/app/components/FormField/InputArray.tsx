@@ -69,7 +69,7 @@ export default function InputArray({ name, register, errors, type, placeholder, 
             <button type="button" onClick={() => handleRemoveValue(index)} style={{
               marginLeft: '12px',
               height: "1.6rem",
-              width: '6rem',
+              width: '3rem',
               borderRadius: "0.5rem",
               border: "none",
               backgroundColor: "#ff3939",
@@ -78,7 +78,7 @@ export default function InputArray({ name, register, errors, type, placeholder, 
               fontWeight: "bold",
               padding: "0.2rem",
             }}>
-              Remover
+              X
             </button>
           </div>
         ))

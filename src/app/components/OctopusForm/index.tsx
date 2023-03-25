@@ -5,12 +5,14 @@ import InputArray from '../FormField/InputArray';
 import style from './style.module.css';
 
 export default function OctopusForm() {
+
   const { register, handleSubmit, formState: { errors } } = useForm<any>();
 
   const onSubmit = (data: any) => console.log(data);
 
   return (
     <form className={style.form} onSubmit={handleSubmit(onSubmit)}>
+      <h1 className={style.title}>Operação Octopus</h1>
 
       <div className={style.divider}>
         <div className={style.formField}>
@@ -116,7 +118,7 @@ export default function OctopusForm() {
         </div>
 
         <div className={style.formField}>
-          <label htmlFor="notificacoes" className={style.label}>Notificações</label>
+          <label htmlFor="notificacoes" className={style.label}>Notificações Realizadas</label>
           <Input type="number" name='notificacoes' register={register} errors={errors} className={style.input} />
         </div>
       </div>
